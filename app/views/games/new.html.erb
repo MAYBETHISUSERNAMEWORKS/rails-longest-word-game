@@ -1,0 +1,8 @@
+<h1>hello</h1>
+<%= @letters %>
+
+<form action="/score" method="post" data-turbo="false">
+  <input type="text" name="score">
+  <input type="submit" value="Play!">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+</form>
